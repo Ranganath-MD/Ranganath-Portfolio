@@ -1,10 +1,16 @@
 import React from "react"
-import styles from "../styles/Header.scss"
+import Logo from "../images/logo.png"
+import Menu from "../images/menuicon.svg"
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      
+    <div className="header">
+      <div className="logo">
+        <img src={Logo} alt="Ranganath-portfolio-logo"/>
+      </div>
+      <div className="menu" >
+        <img src={Menu} alt="hamburger-menu"/>
+      </div>
     </div>
   )
 }

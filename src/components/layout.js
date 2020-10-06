@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-         footer
+          Made With 🧡
         </footer>
       </div>
     </>
