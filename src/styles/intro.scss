@@ -1,4 +1,83 @@
+
+// @font-face {
+//     font-family: fontforName;
+//     src: url(speedtrap.otf);
+// }
+
 .index-container{
+    display: grid;
+    grid-template-columns: 10% 50% 30% 10%;
+    min-height: 80vh;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .social-container{
+        display: flex;
+        align-items: center;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        p{
+            font-size: 1.5vw;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1{
+            font-size: 8vw;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .index-container{
+        display: grid;
+        grid-template-columns: 10% 80% 0% 10%;
+    }
+}
+
+// social icons
+
+.social{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+// Menu
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 0px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
 }
