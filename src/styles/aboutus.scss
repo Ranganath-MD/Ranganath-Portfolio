@@ -1,0 +1,88 @@
+
+@mixin main {
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        text-align: center;
+    }
+}
+.main-container{
+    max-width: 700px;
+    margin: auto;
+}
+.container{
+    @include main();
+    align-items: center;
+}
+.work-container{
+    @include main();
+    margin-top: 20px;
+
+    div{
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        ul {
+            li{
+                font-size: 18px;
+                text-align: justify; 
+            }
+        }
+    }
+
+    a{
+        color: #ff9800;
+    }
+}
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f1f4f8;
+    box-shadow: 5px 5px 10px #b68b16b8;
+    
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.description{
+   max-width: 700px;
+   margin-top: 20px;
+   p{
+        font-size: 18px;
+        text-align: justify;
+   }
+   b{
+
+   }
+
+}
+
+
+.techs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    font-weight: 600;
+
+    span{
+        margin-top: 5px;
+
+        
+       
+        &::before{
+            content: ">";
+            color: #ff9800;
+        }
+    }
+}
+
+
+
+

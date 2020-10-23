@@ -7,7 +7,7 @@
 .index-container{
     display: grid;
     grid-template-columns: 10% 50% 30% 10%;
-    min-height: 80vh;
+    min-height: 82vh;
 
     img{
         width: 100%;
@@ -29,6 +29,30 @@
         justify-content: center;
         align-items: center;
 
+        button{
+            background:linear-gradient(to bottom, #ff9800 0%,#ff9800 100%);
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            background-size: 4px 4px;
+            color:  #ff9800;
+            text-decoration: none;
+            transition: background-size .6s;
+            margin-top: 15px; 
+            padding: 2px;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+            &:hover{
+                background-size: 4px 40px;
+                color: #000;
+            }
+            
+            &:focus{
+                border: none;
+                outline: none;
+            }
+        }
 
         p{
             font-size: 1.5vw;
@@ -67,7 +91,18 @@
     img{
         width: 25px;
         height: 25px;
-    }
+        background: #f1f4f8;
+        border-radius: 50%;
+        box-shadow:  3px 3px 12px #cdcfd3, 
+             0px 0px 12px #ffffff;
+             &:hover {
+                transform: scale(1.2);
+                transition-timing-function: ease;
+                transition-duration: .3s;
+            }
+        }
+        
+       
 }
 
 // Menu
@@ -79,5 +114,22 @@
         margin: 0px;
         margin-top: 5px;
         font-size: 15px;
+
     }
+    a {
+        background:linear-gradient(to bottom, #ff9800 0%,#ff9800 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 2px 2px;
+        color:  #ff9800;
+        text-decoration: none;
+        transition: background-size .5s;
+        margin-top: 3px;
+
+        &:hover{
+            background-size: 2px 25px;
+            color:  #000;
+        }
+      }
+
 }

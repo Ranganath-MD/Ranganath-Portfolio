@@ -5,12 +5,16 @@ body{
     margin: 0px;
     padding: 20px;
     background: #f1f4f8;
-    // background-image: url("../images/pattern2.png");
-    // background-position: right;
-    // background-size: contain;
-    // background-repeat: no-repeat;
+    background-image: url("../images/pattern3.svg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: white;
 }
 
+.darkmode-background{
+    background: none;
+}
 main{
     // min-height: 72vh;
 }
@@ -51,4 +55,47 @@ main{
 footer{
     text-align: center;
     padding: 10px;
+}
+
+//display email at the right side of page
+.email{
+    position: absolute;
+    top: 58vh;
+    right: -35vh;
+    transform: rotate(90deg);
+
+    @media only screen and (max-width: 930px){
+        display: none;
+    }
+    .email-link{
+        text-decoration: none;
+        color: white;
+    }
+    &::after{
+        content: "----------------------------------------------------------";
+        color: #ff9800;
+        margin-right: 5px;
+    }
+}
+
+// menu options
+.menu-options{
+    position: fixed;
+    left: -10vh;
+    top: 50%;
+    transform: rotate(-90deg);
+
+    a{
+        text-decoration: none;
+        color: #ff9800;
+        margin-right: 10px;
+
+        @media only screen and (max-width: 930px){
+            display: none;
+        }
+
+        &::before{
+            content: "⚫";
+        }
+    }
 }

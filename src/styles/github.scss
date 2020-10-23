@@ -1,0 +1,90 @@
+.git-container{
+    max-width: 900px;
+    margin: auto;
+
+    h1{
+        text-align: center;
+    }
+
+    .repo-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+
+        .repo-card{
+            background: #040721;
+            box-shadow:  5px 5px 10px #02030d, 
+             -5px -5px 10px #060b35;
+            padding: 15px;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            .card-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .git-code{
+                    width: 35px;
+                    height: auto;
+                    cursor: pointer;
+                }
+            }
+
+            .folder-icon{
+                width: 18px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            span{
+                font-weight: 600;
+                font-size: 1.5rem;
+                color:  #ff9800;
+            }
+
+            p{
+                margin: 5px 0px;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        button{
+            width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #040721;
+            cursor: pointer;
+        }
+    }
+
+    .banner{
+        width: 55%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 100%;
+        }
+    }
+
+    
+}

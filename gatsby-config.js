@@ -4,14 +4,16 @@ module.exports = {
     short_description: `I build things for web`,
     description: `I am Fullstack web developer based in Bangalore, specializing in building exceptional websites, application`,
     author: `Ranganath`,
-    techs: [
-      { id: 1, tech: "Javascript(ES6+)", icon: ""},
-      { id: 2, tech: "React js", icon: ""},
-      { id: 3, tech: "Node js", icon: ""},
-      { id: 4, tech: "HTML", icon: ""},
-      { id: 5, tech: "css/scss", icon: ""},
-      { id: 6, tech: "Gatsby", icon: ""}
-    ]
+    keyword: ["Ranganath portfolio", "react js developer", "node js developer", "fullstack developer", "developer in Bangalore", "javascript"],
+    github: "https://github.com/Ranganath-MD",
+    gitImage: "/images/new-github.svg",
+    linkedin: "https://www.linkedin.com/in/ranganathmd/",
+    linkedinImage: "/images/new-linkedin.svg",
+    facebook: "https://www.facebook.com/ranganath.m.908/",
+    fbImage: "/images/fb.svg",
+    codesandbox: "https://codesandbox.io/u/Ranganath-MD",
+    codesandboxImage: "/images/codesandbox.svg",
+    gmail: "ranganath.developer@gmail.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +27,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+          url: "https://api.github.com/users/Ranganath-MD/repos",
+          owner: {
+            firstname: "Ranganath",
+            lastname: "MD"
+          }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
