@@ -7,8 +7,8 @@ const Menu = () => {
     <div className="menu">
       {/* <Link to="/hire-me" >Hire Me </Link> */}
       <Link to="/about-me" >About Me</Link>
-      <Link to="/my-work" >My work</Link>
-      <Link to="/github" >GitHub</Link>
+      <Link to="/my-work" >My Work</Link>
+      <Link to="/github" >Github</Link>
     </div>
   )
 }

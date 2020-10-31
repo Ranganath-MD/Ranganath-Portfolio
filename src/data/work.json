@@ -1,0 +1,72 @@
+{
+    "projects" : [
+        {
+            "project_id": "project01",
+            "private": false,
+            "name": "Guidesly",
+            "short_desc": "Guidesly is an application providing anglers a real-time booking system for fishing guides, Built using React framework called Gatsby",
+            "pic": [
+                "https://user-images.githubusercontent.com/57658387/97144881-7e496c00-1722-11eb-95cc-f525f63dc918.png"
+            ],
+            "techs": ["React Js", "Gatsby Js", "Node Js", "Google Maps", "Strapi CMS"],
+            "link": "https://guidesly.com/"
+        },
+        {
+            "project_id": "project02",
+            "name": "Pro Spot",
+            "private": false,
+            "short_desc": "Pro Spot International specializes in quality welding and repair products for the collision repair industry. Prospot is a hybrid mobile application built using Ext-React",
+            "pic": [
+                "https://user-images.githubusercontent.com/57658387/97144879-7c7fa880-1722-11eb-8e8b-b29aa32fb872.png"
+            ],
+            "techs": ["React Js", "Ext-React"],
+            "link": "https://prospot.com/"
+        },
+        {
+            "project_id": "project03",
+            "name": "Jupiter",
+            "private": true,
+            "short_desc": "React js application to show movie and their details, built using Movie DB API",
+            "pic": [
+                "https://user-images.githubusercontent.com/57658387/97144339-80f79180-1721-11eb-87b4-972c8e300b49.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144384-940a6180-1721-11eb-9747-b9446f34e776.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144373-8e148080-1721-11eb-831c-0ccf202d841a.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144362-894fcc80-1721-11eb-83df-324508b1e273.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144354-8654dc00-1721-11eb-908c-183c0e5385d5.PNG"
+            ],
+            "techs": ["React Js", "React Router", "Movie-DB", "MDBootstrap"],
+            "link": "https://jupitershow.web.app/",
+            "github": "https://github.com/Ranganath-MD/Jupiter"
+        },
+        {
+            "project_id": "project04",
+            "name": "Toomato Restaurant",
+            "private": true,
+            "short_desc": "React js application to find the restaurant in the particular area using zomato API and Google Map",
+            "pic": [
+                "https://user-images.githubusercontent.com/57658387/97144145-2c541680-1721-11eb-95ae-10517a184db8.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144167-32e28e00-1721-11eb-9ef7-116718efd163.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144165-3249f780-1721-11eb-8b18-33de10334348.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144162-30803400-1721-11eb-8eca-618473425312.PNG"
+            ],
+            "techs": ["React Js", "Zomato API", "Google Map", "Material UI"],
+            "link": "https://toomato-228d5.web.app/",
+            "github": "https://github.com/Ranganath-MD/toomato-restaurants"
+        },
+        {
+            "project_id": "project05",
+            "name": "Contact Manager",
+            "private": true,
+            "short_desc": "Fullstack application to store the contacts with edit and delete functionality, built using React Js, Node js and Mongo DB",
+            "pic": [
+                "https://user-images.githubusercontent.com/57658387/97144023-fa42b480-1720-11eb-9e10-db0ad9d64d64.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144074-0e86b180-1721-11eb-9537-e55860803bd9.PNG",
+                "https://user-images.githubusercontent.com/57658387/97144107-1b0b0a00-1721-11eb-80b2-3ced07e00f2c.PNG"
+            ],
+            "techs": ["React JS", "Redux", "Node JS", "Mongo DB", "Sass"],
+            "link": "https://saveyourcontact.herokuapp.com/",
+            "github": "https://github.com/Ranganath-MD/Contact-Manager"
+        }
+
+    ]
+}

@@ -1,0 +1,24 @@
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 20vw;
+        margin: 0px;
+        color: #ff9800;
+    }
+    p{
+        mix-blend-mode: difference;
+        font-size: 1.5em;
+        text-align: justify;
+        a{
+            color: #ff9800;
+        }
+    }
+}

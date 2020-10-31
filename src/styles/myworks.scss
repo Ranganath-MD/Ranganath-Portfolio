@@ -1,0 +1,68 @@
+.workcontainer{
+    max-width: 900px;
+    margin: auto;
+
+    h1{
+        text-align: center;
+    }
+}
+
+.work-info{
+     margin-top: 10vh;
+     padding: 20px;
+     border: 2px solid transparent;
+     box-shadow: 5px 5px 10px #02030d, -5px -5px 10px #060b35;
+    .swiper{
+        margin-bottom: 15px;
+    }
+    h2{
+        color: #ff9800;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .name-container{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 25px;
+            height: auto;
+            margin-top: 5px;
+        }
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        
+        img{
+            width: 15px;
+        }
+        
+        a{
+            color: #ff9800;
+            margin-left: 10px;
+        }
+    }
+    .tech{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        font-size: 12px;
+
+        .name{
+            margin: 0px 5px 0px 0px;
+            padding: 2px 5px;
+            border: 1px solid #ff9800;
+            border-radius: 10px;
+            margin-top: 2px;
+        }
+    }
+
+    &:hover{
+        border: 2px solid #ff9800;
+        padding: 20px;
+    }
+}

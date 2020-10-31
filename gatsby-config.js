@@ -28,16 +28,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: "gatsby-source-custom-api",
-      options: {
-          url: "https://api.github.com/users/Ranganath-MD/repos",
-          owner: {
-            firstname: "Ranganath",
-            lastname: "MD"
-          }
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

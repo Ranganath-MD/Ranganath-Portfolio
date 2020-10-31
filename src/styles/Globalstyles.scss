@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;800&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;800&display=swap');
+@font-face {
+    font-family: globalFonts;
+    src: url("../data/BioRhyme-Regular.ttf");
+}
 body{
-    font-family: 'BioRhyme', serif;
+    font-family: globalFonts;
     margin: 0px;
     padding: 20px;
     background: #f1f4f8;
@@ -15,9 +18,7 @@ body{
 .darkmode-background{
     background: none;
 }
-main{
-    // min-height: 72vh;
-}
+
 
 // header styles
 
@@ -26,7 +27,7 @@ main{
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     .logo{
         width: 40px;
@@ -49,6 +50,99 @@ main{
     }
 
 }
+.MuiPaper-root{
+    background-image: url("../images/pattern3.svg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: white !important;
+    height: 100vh !important;
+    width: 100% !important;
+}
+.close-button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ff9800;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+.drawer-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        font-size: 16vh;
+        font-weight: 600;
+        color: #ff9800;
+
+        @media only screen and (min-width: 701px) and (max-width: 900px) {
+            font-size: 14vh;
+        }
+        @media only screen and (max-width: 700px) {
+            font-size: 9vh;
+        }
+        @media only screen and (max-width: 400px) {
+            font-size: 6vh;
+        }
+        &:hover{
+            transform: translate(20px, 0px);
+            transition: all 1s ease-out;
+        }
+    }
+}
+
+@mixin network-status{
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+    transform-origin: center;
+    p{
+        margin: 0px 10%
+    }
+}
+.network-inner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.network-close-btn{
+    outline: none;
+    border: none;
+    background: transparent;
+    height: 30px;
+    
+}
+
+.online{
+    @include network-status();
+    background-color: #ff9800;
+    color: black;
+}
+.offline{
+    @include network-status();
+    background-color: rgb(141, 11, 11);
+    color: white;
+}
+
 
 //footer styles
 
@@ -61,7 +155,7 @@ footer{
 .email{
     position: absolute;
     top: 58vh;
-    right: -35vh;
+    right: -40vh;
     transform: rotate(90deg);
 
     @media only screen and (max-width: 930px){
@@ -81,7 +175,7 @@ footer{
 // menu options
 .menu-options{
     position: fixed;
-    left: -10vh;
+    left: -12vh;
     top: 50%;
     transform: rotate(-90deg);
 
@@ -98,4 +192,20 @@ footer{
             content: "⚫";
         }
     }
+}
+
+@mixin slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
+
+    img{
+        width: 100% !important;
+    }
+}
+
+// swiper slide
+.swiper-slide{
+    @include slider()
 }
