@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
           style={{ display: online !== undefined ? "block": "none"}} >
             {
               online ? <div className="network-inner-container">
-                <p>online</p>
+                <p>Your are back online</p>
                 <div>
                   <button 
                     className="network-close-btn"
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
                   </button>
                 </div>
                 </div> : <div className="network-inner-container">
-                <p>offline</p>
+                <p>The internet connection appears to be offline, check your internet connection</p>
                 <div>
                   <button 
                     className="network-close-btn"
