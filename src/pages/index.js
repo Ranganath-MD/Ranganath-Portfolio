@@ -12,7 +12,10 @@ import { variants, img_variants, item } from "../variants/variants"
 const IndexPage = () => {
   return(
     <Layout>
-    <SEO title="Introduction"/>
+    <SEO 
+      title="Ranganath"
+      description="React js and Node js developer based in bangalore"
+    />
     <div className="index-container">
       <div className="social-container">
         <SocialIcons />

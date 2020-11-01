@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Header from "./header"
 import '../styles/Globalstyles.scss'
 import Helmet from "react-helmet"
@@ -7,8 +7,6 @@ import { useNetworkStatus } from "../hooks/networkStatus";
 
 const Layout = ({ children }) => {
   const [online, status, setOnline] = useNetworkStatus();
-  const [show, setShow] = useState(true)
-
 
   return (
     <>
@@ -22,23 +20,23 @@ const Layout = ({ children }) => {
           style={{ display: online !== undefined ? "block": "none"}} >
             {
               online ? <div className="network-inner-container">
-                <p>Your are back online</p>
+                <p>Your are back {status}</p>
                 <div>
                   <button 
                     className="network-close-btn"
                     onClick={() => setOnline(undefined)}
                   >
-                    <span role="image">❌</span>
+                    <span role="img">❌</span>
                   </button>
                 </div>
                 </div> : <div className="network-inner-container">
-                <p>The internet connection appears to be offline, check your internet connection</p>
+                <p>The internet connection appears to be {status}, check your internet connection</p>
                 <div>
                   <button 
                     className="network-close-btn"
                     onClick={() => setOnline(undefined)}
                   >
-                    <span role="image">❌</span>
+                    <span role="img">❌</span>
                   </button>
                 </div>
                 </div> 

@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from "react"
+import React, {useState} from "react"
 import { Link } from "gatsby"
 import Logo from "../images/logo.png"
 import Menu from "../images/menuicon.svg"
@@ -7,12 +7,9 @@ import DrawerComponent from "./drawer"
 const Header = () => {
   const [open, setOpen] = useState(false)
   
-  const handleDrawer = useCallback(
-    () => {
-      setOpen(!open)
-    },
-    [open],
-  )
+  const handleDrawer = () => {
+    setOpen(!open)
+  }
 
   return (
     <div className="header">

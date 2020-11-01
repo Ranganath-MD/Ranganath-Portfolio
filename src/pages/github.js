@@ -7,6 +7,7 @@ import github from "../images/github.png"
 import AppleFace from "../images/apple-face.png"
 import { variants, item } from "../variants/variants"
 import { motion } from 'framer-motion'
+import SEO from '../components/seo'
 
 const GitHub = () => {
  const [repo, setRepo] = useState([])
@@ -26,6 +27,10 @@ const GitHub = () => {
   // const repodata = data.allCustomApi.nodes
   return (
     <Layout>
+       <SEO 
+        title="Github"
+        description="Ranganath's works on github"
+      />
       <motion.div 
         variants={variants}
         initial="hidden"

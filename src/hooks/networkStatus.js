@@ -27,7 +27,7 @@ export const useNetworkStatus = () => {
       window.removeEventListener("online", handleEvent);
       window.removeEventListener("offline", handleEvent);
     };
-  }, [navigator.onLine]);
+  }, []);
 
   return [online, status, setOnline];
 };

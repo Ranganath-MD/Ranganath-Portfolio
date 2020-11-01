@@ -5,10 +5,15 @@ import { Link } from "gatsby"
 import { motion } from "framer-motion"
 import "../styles/aboutus.scss"
 import { item, variants } from '../variants/variants'
+import SEO from '../components/seo'
 
 const AboutMe = () => {
   return (
     <Layout>
+      <SEO 
+        title="About Me"
+        description="About Ranganath, a Fullstack developer in bangalore"
+      />
         <div className="main-container">
           <div className="email">
             <span className="line"></span>

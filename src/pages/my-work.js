@@ -17,6 +17,7 @@ import "swiper/swiper.scss";
 import { variants, item } from "../variants/variants"
 import "swiper/components/navigation/navigation.scss";
 import { motion } from 'framer-motion'
+import SEO from '../components/seo'
 
 SwiperCore.use([
   Navigation,
@@ -25,12 +26,15 @@ SwiperCore.use([
   EffectCoverflow,
 ]);
 
-
 const MyWork = () => {
   const { width } = useWindowsize()
 
   return (
     <Layout>
+      <SEO 
+        title="Something I have worked"
+        description="Ranganath's works in react js and node js"
+      />
         <motion.div 
           variants={variants}
           initial="hidden"
