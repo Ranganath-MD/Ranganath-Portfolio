@@ -2,7 +2,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-function SEO({ description, meta, lang, title }) {
+const SEO = ({ description, meta, lang, title }) => {
 
   return (
     <Helmet

@@ -1,24 +1,40 @@
 import React from 'react'
-import GitHub from "../images/new-github.svg"
-import Codesandbox from "../images/codesandbox.svg"
-import Linkedin from "../images/new-linkedin.svg"
-import Facebook from "../images/fb.svg"
 import "../styles/intro.scss"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SocialIcons = () => {
+    const data = useStaticQuery(graphql`
+        {
+            site {
+                siteMetadata {
+                    socialicons{
+                        gitImage
+                        github
+                        codesandbox
+                        codesandboxImage
+                        facebook
+                        fbImage
+                        linkedin
+                        linkedinImage
+                    }
+                }
+            }
+        }
+    `)
+    const { github, gitImage, codesandbox, codesandboxImage,facebook, fbImage, linkedin, linkedinImage} = data.site.siteMetadata.socialicons
     return (
         <div className="social">
-            <a href="https://github.com/Ranganath-MD" target="_blank" rel="noreferrer">
-                <img src={GitHub} alt="github-imz"/>
+            <a href={github} target="_blank" rel="noreferrer">
+                <img src={gitImage} alt="github-imz"/>
             </a>
-            <a href="https://codesandbox.io/u/Ranganath-MD" target="_blank" rel="noreferrer">
-                <img src={Codesandbox} alt="csb-imz"/>
+            <a href={codesandbox} target="_blank" rel="noreferrer">
+                <img src={codesandboxImage} alt="csb-imz"/>
             </a>
-            <a href="https://www.linkedin.com/in/ranganathmd/" target="_blank" rel="noreferrer">
-                <img src={Linkedin} alt="linkedin-imz"/>
+            <a href={linkedin} target="_blank" rel="noreferrer">
+                <img src={linkedinImage} alt="linkedin-imz"/>
             </a>
-            <a href="https://www.facebook.com/ranganath.m.908/" target="_blank" rel="noreferrer">
-                <img src={Facebook} alt="fb-imz"/>
+            <a href={facebook} target="_blank" rel="noreferrer">
+                <img src={fbImage} alt="fb-imz"/>
             </a>
         </div>
     )

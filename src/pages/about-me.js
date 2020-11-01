@@ -6,8 +6,29 @@ import { motion } from "framer-motion"
 import "../styles/aboutus.scss"
 import { item, variants } from '../variants/variants'
 import SEO from '../components/seo'
+import { useStaticQuery, graphql } from "gatsby"
 
 const AboutMe = () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          aboutme {
+            techs
+            exp {
+              desc
+              link
+              title
+              org
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const { techs, exp } = data.site.siteMetadata.aboutme
+
   return (
     <Layout>
       <SEO 
@@ -40,12 +61,11 @@ const AboutMe = () => {
                   <p>Here are a few technologies I've been working with recently:</p>
               </motion.div>
               <motion.div variants={item} className="techs">
-                  <span> Javascript(ES6+)</span>
-                  <span> HTML & (S)CSS</span>
-                  <span> React js & Redux</span>
-                  <span> Gatsby js</span>
-                  <span> Node js</span>
-                  <span> Next js</span>
+                {
+                  techs.map(tech => {
+                    return <span key={tech}>{tech}</span>
+                  })
+                }
               </motion.div>
             </motion.div>
           </motion.div>
@@ -55,30 +75,24 @@ const AboutMe = () => {
             animate="show"
             className="work-container">
             <motion.h1 variants={item}>My Work Experience</motion.h1>
-            <div>
-              <motion.span variants={item}>Software Engineer</motion.span> 
-              <motion.span variants={item}><a href="https://mverve.com/" target="_blank" rel="noreferrer"> @ Mverve Technologies Pvt Ltd</a></motion.span>
-              <motion.ul variants={item}>
-                <li>Developed and maintained code for client websites primarily using HTML, CSS, Sass, JavaScript, and React js</li>
-                <li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, Gatsby, React, Strapi, Ext-React, React-Native and Netlify</li>
-                <li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
-                <li>Developed Hybrid application using React with the help of Extjs components</li>
-              </motion.ul>
-            </div>
-            <div>
-              <motion.span variants={item}>Full stack Developer Intern</motion.span> <motion.span variants={item}><a href="https://dctacademy.com/" target="_blank" rel="noreferrer">@ DCT Academy</a></motion.span>
-              <motion.ul variants={item}>
-                <li>Learnt new technologies like Javascript, React js, and Node js </li>
-                <li>Developed fullstack application using React js and Node js</li>
-              </motion.ul>
-            </div>
-            <div>
-              <motion.span variants={item}>Scientific Data Analyst</motion.span> <motion.span variants={item}><a href="http://www.molecularconnections.com/" target="_blank" rel="noreferrer">@ Molecular connections</a></motion.span>
-              <motion.ul variants={item}>
-                <li>Communicate and worked with large team of members </li>
-                <li>Maintained and extracted large amount of data for the client</li>
-              </motion.ul>
-            </div>
+            {
+              exp.map(work => {
+                return (
+                  <div>
+                    <motion.span variants={item}>{work.title}</motion.span> 
+                    <motion.span variants={item}><a href={work.link} target="_blank" rel="noreferrer"> @ {work.org}</a></motion.span>
+                    <motion.ul variants={item}>
+                      {
+                        work.desc.map((d, i)=> {
+                          return <li key={i}>{d}</li>
+                        })
+                      }
+                    </motion.ul>
+                  </div>
+                )
+              })
+            }
+            
           </motion.div>
         </div>
     </Layout>

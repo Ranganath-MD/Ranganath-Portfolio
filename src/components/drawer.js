@@ -2,6 +2,7 @@ import React from 'react'
 import Drawer from '@material-ui/core/Drawer';
 import { Link } from 'gatsby';
 import useWindowsize from "../hooks/useWindowsize"
+
 const DrawerComponent = ({ open, handleDrawer }) => {
   const { width } = useWindowsize()
   return (
