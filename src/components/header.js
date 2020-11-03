@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { Link } from "gatsby"
-import Logo from "../images/logo.png"
-import Menu from "../images/menuicon.svg"
+import Logo from "../images/logo.webp"
+import Menu from "../images/newmenu.webp"
 import DrawerComponent from "./drawer"
 
 const Header = () => {

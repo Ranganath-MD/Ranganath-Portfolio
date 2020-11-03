@@ -28,8 +28,7 @@ const GitHub = () => {
   return (
     <Layout>
        <SEO 
-        title="Github"
-        description="Ranganath's works on github"
+        title="Github - Get you walk through the some of works on my github profile"
       />
       <motion.div 
         variants={variants}

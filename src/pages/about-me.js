@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Profile from "../images/profile.jpg"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
 import "../styles/aboutus.scss"
@@ -32,8 +31,7 @@ const AboutMe = () => {
   return (
     <Layout>
       <SEO 
-        title="About Me"
-        description="About Ranganath, a Fullstack developer in bangalore"
+        title="About Me - Who am I? and where I have worked"
       />
         <div className="main-container">
           <div className="email">
@@ -52,11 +50,11 @@ const AboutMe = () => {
           >
             <motion.h1 variants={item}>About Me</motion.h1>
             <motion.div variants={item} className="profile-img">
-              <img src={Profile} alt="profile" />
+              <img src="https://avatars1.githubusercontent.com/u/57658387?s=460&u=173856ff2b12a03e9d469b6066e12070c0ca6b6c&v=4" alt="profile" />
             </motion.div>
             <motion.div className="description">
               <motion.div variants={item}>
-                  <p>Hello! I'm <b>Ranganath MD</b> a Software Engineer based in Bengaluru, KA.</p>
+                  <p>Hello! I'm Ranganath MD a Software Engineer based in Bengaluru, KA.</p>
                   <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
                   <p>Here are a few technologies I've been working with recently:</p>
               </motion.div>
@@ -74,7 +72,7 @@ const AboutMe = () => {
             initial="hidden"
             animate="show"
             className="work-container">
-            <motion.h1 variants={item}>My Work Experience</motion.h1>
+            <motion.h2 variants={item}>My Work Experience</motion.h2>
             {
               exp.map(work => {
                 return (

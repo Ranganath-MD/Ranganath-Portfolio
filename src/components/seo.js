@@ -1,8 +1,20 @@
 
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, meta, lang, title }) => {
+const SEO = ({ meta, lang, title, schemaMarkup }) => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          description
+          keywords
+          author
+        }
+      }
+    }
+  `)
 
   return (
     <Helmet
@@ -13,15 +25,19 @@ const SEO = ({ description, meta, lang, title }) => {
       meta={[
         {
           name: `description`,
-          content: description,
+          content: data.site.siteMetadata.description,
         },
         {
           property: `og:title`,
           content: title,
         },
         {
+          property: `keywords`,
+          content: data.site.siteMetadata.keywords
+        },
+        {
           property: `og:description`,
-          content: description,
+          content: data.site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -33,10 +49,15 @@ const SEO = ({ description, meta, lang, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: "Ranganath MD",
+          content: data.site.siteMetadata.author,
         }
       ].concat(meta)}
-    />
+    >
+      {
+        schemaMarkup && 
+        <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+      }
+    </Helmet>
   )
 }
 

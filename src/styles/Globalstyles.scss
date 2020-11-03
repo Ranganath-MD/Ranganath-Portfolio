@@ -1,7 +1,7 @@
-// @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;800&display=swap');
 @font-face {
     font-family: globalFonts;
     src: url("../data/BioRhyme-Regular.ttf");
+    font-display: swap;
 }
 body{
     font-family: globalFonts;
@@ -18,8 +18,6 @@ body{
 .darkmode-background{
     background: none;
 }
-
-
 
 
 // header styles
@@ -41,12 +39,15 @@ body{
         }
     }
     .menu{
-        width: 35px;
+        width: 45px;
         height: auto;
-        cursor: pointer;
-
+        background-color: #040721;
+        outline: none;
+        border: none;
+        
         img{
             width: 100%;
+            cursor: pointer;
             height: auto;
         }
     }

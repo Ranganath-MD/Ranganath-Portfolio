@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Ranganath`,
+    siteUrl: 'https://ranganathmd.netlify.app/',
     short_description: `I build things for web`,
-    description: `I am Fullstack web developer based in Bangalore, specializing in building exceptional websites, application`,
+    description: `I am a Fullstack web developer based in Bangalore specializing mostly in Javascript, React, React Native, NodeJs and Gatsby, I always after building exceptional websites, application. I have worked with some pretty exciting projects by my own and for an organization using React js and Node js. github is the place to showcase our works, love to showcase my work as well through github`,
     author: `Ranganath`,
-    keyword: ["Ranganath portfolio", "react js developer", "node js developer", "fullstack developer", "developer in Bangalore", "javascript"],
+    keywords: "javascript, React, React js, Node js, Ranganath MD, Ranganath portfolio, react js developer,fullstack developer, bengaluru, Bangalore, developer in Bangalore",
 
     socialicons: {
       github: "https://github.com/Ranganath-MD",
@@ -57,17 +57,34 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ranganath's portfolio`,
-        short_name: `Ranga`,
+        name: `Ranganath MD`,
+        short_name: `Ranganath`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#040721`,
+        theme_color: `#040721`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.webp`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://ranganathmd.netlify.app/',
+        sitemap: 'https://ranganathmd.netlify.app/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    }
   ],
 }

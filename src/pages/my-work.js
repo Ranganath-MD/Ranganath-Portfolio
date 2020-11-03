@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "../styles/myworks.scss"
 import workData from "../data/work.json"
 import LinkImage from "../images/link.svg"
-import Github from "../images/github.svg"
+
 import SwiperCore, {
   Navigation,
   Autoplay,
@@ -32,8 +32,7 @@ const MyWork = () => {
   return (
     <Layout>
       <SEO 
-        title="Something I have worked"
-        description="Ranganath's works in react js and node js"
+        title="My Works - worked on some exciting projects"
       />
         <motion.div 
           variants={variants}
@@ -81,7 +80,7 @@ const MyWork = () => {
                         <h2>{data.name}</h2>
                         {
                           data.private === false ? null : 
-                          <a href={data.github} target="_blank" rel="noreferrer"><img src={Github} alt="work samples" /></a>
+                          <a href={data.github} target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/57658387/97781353-e5fb1f00-1b47-11eb-8daf-f021c452bce6.png" alt="work samples" /></a>
                         }
                       </div>
                       <p>{data.short_desc}</p>

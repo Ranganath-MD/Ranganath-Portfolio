@@ -10,11 +10,24 @@ import { motion } from "framer-motion"
 import { variants, img_variants, item } from "../variants/variants"
 
 const IndexPage = () => {
+  const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Ranganath MD",
+    "url": "https://ranganathmd.netlify.app/",
+    "image": "https://avatars1.githubusercontent.com/u/57658387?s=460&u=173856ff2b12a03e9d469b6066e12070c0ca6b6c&v=4",
+    "sameAs": [
+      "https://ranganathmd.netlify.app/",
+      "https://www.linkedin.com/in/ranganathmd",
+      "https://www.github.com/Ranganath-MD"
+    ],
+    "jobTitle": "Software Engineer - React js"  
+  }
   return(
     <Layout>
     <SEO 
-      title="Ranganath"
-      description="React js and Node js developer based in bangalore"
+      title="Ranganath - A fullstack web developer specializing in React.js and Node.js"
+      schemaMarkup={schema}
     />
     <div className="index-container">
       <div className="social-container">
