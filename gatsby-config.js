@@ -75,15 +75,6 @@ module.exports = {
       options: {
         host: 'https://ranganathmd.netlify.app/',
         sitemap: 'https://ranganathmd.netlify.app/sitemap.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
       }
     }
   ],
