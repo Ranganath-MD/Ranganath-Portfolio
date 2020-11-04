@@ -26,7 +26,7 @@ const IndexPage = () => {
   return(
     <Layout>
     <SEO 
-      title="Ranganath - A fullstack web developer specializing in React.js and Node.js"
+      title="Ranganath - A fullstack web developer specializing in React.js"
       schemaMarkup={schema}
     />
     <div className="index-container">

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://ranganathmd.netlify.app/',
     short_description: `I build things for web`,
-    description: `I am a Fullstack web developer based in Bangalore specializing mostly in Javascript, React, React Native, NodeJs and Gatsby, I always after building exceptional websites, application. I have worked with some pretty exciting projects by my own and for an organization using React js and Node js. github is the place to showcase our works, love to showcase my work as well through github`,
+    description: `I am a Fullstack web developer based in Bangalore specializing mostly in Javascript, React, React Native, NodeJs and Gatsby, I always after building exceptional websites, application. I have worked with some pretty exciting projects by my own and for an organization using React js and Node js.`,
     author: `Ranganath`,
     keywords: "javascript, React, React js, Node js, Ranganath MD, Ranganath portfolio, react js developer,fullstack developer, bengaluru, Bangalore, developer in Bangalore",
 
@@ -13,7 +13,7 @@ module.exports = {
       linkedinImage: "https://user-images.githubusercontent.com/57658387/97781354-e5fb1f00-1b47-11eb-8fdb-17bac857085f.png",
       facebook: "https://www.facebook.com/ranganath.m.908/",
       fbImage: "https://user-images.githubusercontent.com/57658387/97781352-e5628880-1b47-11eb-9599-15f0395c3535.png",
-      codesandbox: "https://codesandbox.io/u/Ranganath-MD",
+      codesandbox: "https://codesandbox.io/u/Ranganath-MD/sandboxes",
       codesandboxImage: "https://user-images.githubusercontent.com/57658387/97781346-e4315b80-1b47-11eb-92e1-70b6ffbb31e9.png",
     },
 
