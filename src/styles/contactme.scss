@@ -56,11 +56,23 @@
         }
         
     }
+   
 
     input[type=submit] {
         width: 120px;
         margin-top: 10px;
         background-color: #ff9800;
         color: #040721;
+    }
+}
+
+.socialicons{
+    position: absolute;
+    top: 300px;
+    @media only screen and (max-width: 768px) {
+       .social{
+           display: flex;
+           flex-direction: column;
+       }
     }
 }

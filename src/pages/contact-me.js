@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import Layout from '../components/layout'
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import "../styles/contactme.scss"
 import { variants, item } from "../variants/variants"
 import { motion } from 'framer-motion'
 import SEO from '../components/seo'
+import SocialIcons from "../components/socialIcons"
 
 const ContactMe = () => {
   const [name, setName] = useState("")
@@ -41,21 +42,16 @@ const ContactMe = () => {
   return (
     <Layout>
       <SEO title="Contact Me - Let's talk if you have any queries"/>
+      <div className="socialicons">
+        <SocialIcons />
+      </div>
       <motion.div 
         variants={variants}
         initial="hidden"
         animate="show"
         className="contactme"
       >
-        <div className="email">
-          <span className="line"></span>
-          <span><a className="email-link" href = "mailto: ranganath.developer@gmail.com">ranganath.developer@gmail.com</a></span>
-        </div>
-        <div className="menu-options">
-          <span><Link to="/about-me">About Me</Link></span>
-          <span><Link to="/my-work">My work</Link></span>
-          <span><Link to="/github">Github</Link></span>
-        </div>
+        
         <form onSubmit={handleSubmit}>
           <motion.h1 variants={item}>Let's talk</motion.h1>
           <div>

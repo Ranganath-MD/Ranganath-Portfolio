@@ -162,7 +162,7 @@ footer{
     right: -40vh;
     transform: rotate(90deg);
 
-    @media only screen and (max-width: 930px){
+    @media only screen and (max-width: 950px){
         display: none;
     }
     .email-link{
@@ -179,7 +179,7 @@ footer{
 // menu options
 .menu-options{
     position: fixed;
-    left: -20vh;
+    left: -22vh;
     top: 300px;
     transform: rotate(-90deg);
 
@@ -188,7 +188,7 @@ footer{
         color: #ff9800;
         margin-right: 10px;
 
-        @media only screen and (max-width: 930px){
+        @media only screen and (max-width: 950px){
             display: none;
         }
 
