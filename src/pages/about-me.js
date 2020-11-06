@@ -41,6 +41,7 @@ const AboutMe = () => {
           <div className="menu-options">
             <span><Link to="/github">Github</Link></span>
             <span><Link to="/my-work">My work</Link></span>
+            <span><Link to="/contact-me">Contact Me</Link></span>
           </div>
           <motion.div 
             variants={variants} 

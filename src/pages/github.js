@@ -43,6 +43,7 @@ const GitHub = () => {
         <div className="menu-options">
           <span><Link to="/about-me">About Me</Link></span>
           <span><Link to="/my-work">My work</Link></span>
+          <span><Link to="/contact-me">Contact Me</Link></span>
         </div>
         <motion.h1 variants={item}>Something I have built</motion.h1>
         <motion.div variants={item} className="banner">

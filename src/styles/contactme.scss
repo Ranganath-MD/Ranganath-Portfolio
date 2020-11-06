@@ -1,0 +1,66 @@
+.contactme{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        width: 60%;
+    }
+
+    p{
+        margin: 0px;
+        margin-top: 15px;
+    }
+    h1{
+        margin: auto;
+    }
+
+    input{
+        width: 100%;
+        padding:5px 10px;
+
+        color: #040721;
+        font-size: 16px;
+        font-weight: 600;
+
+        &::placeholder{
+            color: grey;
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+        &:focus{
+            outline: none;
+            background-color:  #ff9800;
+        }
+
+    }
+    textarea{
+        width: 100%;
+        padding: 10px;
+        min-height: 120px;
+        resize: none;
+        color: #040721;
+        font-size: 16px;
+        font-weight: 600;
+        &:focus{
+            outline: none;
+            background-color: #ff9800;
+        }
+        &::placeholder{
+            color: grey;
+            font-size: 15px;
+            font-family: monospace;
+        }
+        
+    }
+
+    input[type=submit] {
+        width: 120px;
+        margin-top: 10px;
+        background-color: #ff9800;
+        color: #040721;
+    }
+}

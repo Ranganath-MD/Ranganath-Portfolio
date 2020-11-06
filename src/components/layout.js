@@ -8,7 +8,6 @@ import {useCaptureResize} from "../hooks/usewindowResize"
 
 const Layout = ({ children }) => {
   const resize = useCaptureResize()
-  console.log(resize)
   return (
     <>
       <Helmet>
