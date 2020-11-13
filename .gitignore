@@ -41,7 +41,9 @@ typings/
 
 # Optional npm cache directory
 .npm
-
+.vscode
+.prettierignore
+.prettierrc
 # Optional eslint cache
 .eslintcache
 
