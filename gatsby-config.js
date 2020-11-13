@@ -76,6 +76,15 @@ module.exports = {
         host: 'https://ranganathmd.netlify.app/',
         sitemap: 'https://ranganathmd.netlify.app/sitemap.xml',
       }
-    }
-  ],
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-P8D7Q64",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+        routeChangeEventName: "gatsby-route-change",
+      },
+    },
+  ]
 }

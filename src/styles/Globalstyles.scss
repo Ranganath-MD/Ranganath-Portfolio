@@ -229,6 +229,10 @@ footer{
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 10vh;
     z-index: 999;
+
+    @media only screen and (max-width: 600px){
+        display: none;
+    }
 }
