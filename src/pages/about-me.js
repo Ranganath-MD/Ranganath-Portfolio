@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
-import "../styles/aboutus.scss"
+import "../styles/aboutme.scss"
 import { item, variants } from '../variants/variants'
 import SEO from '../components/seo'
 import { useStaticQuery, graphql } from "gatsby"
