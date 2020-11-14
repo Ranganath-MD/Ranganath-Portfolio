@@ -78,12 +78,12 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: `gatsby-plugin-posthog-analytics`,
       options: {
-        id: "GTM-P8D7Q64",
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
-        routeChangeEventName: "gatsby-route-change",
+        apiKey: "URKC890CenrkTUMG4Yne79WsLZeQVFcLl8JfK9OXxoQ",
+        appHost: "https://app.posthog.com",
+        head: true,
+        isEnabledDevMode: true
       },
     },
   ]
