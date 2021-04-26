@@ -21,6 +21,15 @@ module.exports = {
       techs: ["Javascript(ES6+)", "HTML & (S)CSS", "React.js & Redux", "Gatsby.js", "Next.js"],
       exp: [
         {
+          title: "Software Developer",
+          link: "https://iqgateway.com/",
+          org: "iQGateway",
+          desc: [
+            "Building an application using React, Typescript, MobX and various technologies",
+            "Helping the team to work better and communicate with multi-disciplinary teams of Business Analyst, developers on a daily basis"
+          ]
+        },
+        {
           title: "Software Engineer",
           link: "https://mverve.com/",
           org: "Mverve Technologies Pvt Ltd",
