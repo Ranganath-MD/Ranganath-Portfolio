@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://ranganathmd.netlify.app/',
     short_description: `I build things for web`,
-    description: `I am a Fullstack web developer based in Bangalore specializing mostly in Javascript, React, React Native, NodeJs and Gatsby, I always after building exceptional websites, application. I have worked with some pretty exciting projects by my own and for an organization using React js and Node js.`,
+    description: `I am a Fullstack web developer based in Bangalore specializing mostly in Javascript, Typescript, React, React Native, NodeJs and Gatsby, I always after building exceptional websites, application. I have worked with some pretty exciting projects by my own and for an organization using React js and Node js.`,
     author: `Ranganath`,
     keywords: "javascript, React, React js, Node js, Ranganath MD, Ranganath portfolio, react js developer,fullstack developer, bengaluru, Bangalore, developer in Bangalore",
 
@@ -18,7 +18,7 @@ module.exports = {
     },
 
     aboutme: {
-      techs: ["Javascript(ES6+)", "HTML & (S)CSS", "React.js & Redux", "Gatsby.js", "Next.js"],
+      techs: ["HTML & (S)CSS", "Javascript(ES6+)", "Typescript", "React.js & Redux", "Gatsby.js", "Next.js", "MobX"],
       exp: [
         {
           title: "Software Developer",
