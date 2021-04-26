@@ -1,27 +1,5 @@
 {
     "projects" : [
-        /*{
-            "project_id": "project01",
-            "private": false,
-            "name": "Guidesly",
-            "short_desc": "Guidesly is an application providing anglers a real-time booking system for fishing guides, Built using React framework called Gatsby",
-            "pic": [
-                "https://user-images.githubusercontent.com/57658387/97144881-7e496c00-1722-11eb-95cc-f525f63dc918.png"
-            ],
-            "techs": ["React Js", "Gatsby Js", "Node Js", "Google Maps", "Strapi CMS"],
-            "link": "https://guidesly.com/"
-        },
-        {
-            "project_id": "project02",
-            "name": "Pro Spot",
-            "private": false,
-            "short_desc": "Pro Spot International specializes in quality welding and repair products for the collision repair industry. Prospot is a hybrid mobile application built using Ext-React",
-            "pic": [
-                "https://user-images.githubusercontent.com/57658387/97144879-7c7fa880-1722-11eb-8e8b-b29aa32fb872.png"
-            ],
-            "techs": ["React Js", "Ext-React"],
-            "link": "https://prospot.com/"
-        },*/
         {
             "project_id": "project03",
             "name": "Jupiter",
