@@ -1,6 +1,6 @@
 {
     "projects" : [
-        {
+        /*{
             "project_id": "project01",
             "private": false,
             "name": "Guidesly",
@@ -21,7 +21,7 @@
             ],
             "techs": ["React Js", "Ext-React"],
             "link": "https://prospot.com/"
-        },
+        },*/
         {
             "project_id": "project03",
             "name": "Jupiter",
