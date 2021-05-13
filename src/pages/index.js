@@ -42,9 +42,6 @@ const IndexPage = () => {
           <motion.p variants={item}>Hi, My name is</motion.p>
           <motion.h1 variants={item}>Ranganath</motion.h1>
           <motion.p variants={item}>I'm a fullstack web developer based in Bengaluru specializing in building exceptional websites and applications.</motion.p>
-//           <motion.button variants={item}>
-//             <a href={Resume} download="Ranganath_resume.pdf"> Download Resume </a>
-//           </motion.button>
         </motion.div>
       </div>
       <motion.div 
